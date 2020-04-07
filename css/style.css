@@ -10,3 +10,11 @@
 span{
     color: aqua;
 }
+p{
+    color: blue;
+    font-style: italic;
+}   
+
+.commit{
+    color: red;
+}
