@@ -1,0 +1,12 @@
+.tituloinicial{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: yellowgreen;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(158, 115, 108);
+}
+span{
+    color: aqua;
+}
