@@ -5,7 +5,7 @@
     margin-top: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: rgb(158, 115, 108);
+    background-color: rgb(139, 66, 55);
 }
 span{
     color: aqua;
@@ -17,4 +17,8 @@ p{
 
 .commit{
     color: red;
+}
+
+body{
+    background-color: rgb(145, 108, 83);
 }
