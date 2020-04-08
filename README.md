@@ -4,7 +4,7 @@ NO APRENDIZADO ATÉ AQUI EM GIT E GITHUB SOBRE BRANCH:
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
-$  git branch
+$  git branch --> Este Comando mostra a Branch Principal no Momento...
 * master
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
@@ -29,8 +29,11 @@ $ git branch fornecedor --> Este comando está criando uma nova Branch "forneced
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
 $ git branch --> Este Comando mostra a Branch Principal no Momento...
+
  > contato
+ 
  > fornecedor
+ 
 * master
 
 *** ABAIXO, TEMOS OUTROS EXEMPLOS DE COMANDOS VÁLIDOS ***
@@ -40,57 +43,96 @@ WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (mast
 $ git branch -b fornecedor
 error: unknown switch `b'
 > usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+
   > or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+  
    > or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   
    > or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   
    > or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   
    > or: git branch [<options>] [-r | -a] [--points-at]
+   
    > or: git branch [<options>] [-r | -a] [--format]
+   
 
 > Generic options
+
     > -v, --verbose         show hash and subject, give twice for upstream branch
+    
     > -q, --quiet           suppress informational messages
+    
     > -t, --track           set up tracking mode (see git-pull(1))
-    > -u, --set-upstream-to <upstream>
-                          change the upstream info
+    
+    > -u, --set-upstream-to <upstream> change the upstream info
+			  
     > --unset-upstream      unset the upstream info
+    
     > --color[=<when>]      use colored output
+    
     > -r, --remotes         act on remote-tracking branches
+    
     > --contains <commit>   print only branches that contain the commit
-    > --no-contains <commit>
-                          print only branches that don't contain the commit
+    
+    > --no-contains <commit> print only branches that don't contain the commit
+    
     > --abbrev[=<n>]        use <n> digits to display SHA-1s
 
 > Specific git-branch actions:
-    > -a, --all             list both remote-tracking and local branches
-    > -d, --delete          delete fully merged branch
-    > -D                    delete branch (even if not merged)
-    > -m, --move            move/rename a branch and its reflog
-    > -M                    move/rename a branch, even if target exists
-    > -c, --copy            copy a branch and its reflog
-    > -C                    copy a branch, even if target exists
-    > -l, --list            list branch names
-    > --show-current        show current branch name
-    > --create-reflog       create the branch's reflog
-    > --edit-description    edit the description for the branch
-    > -f, --force           force creation, move/rename, deletion
-    > --merged <commit>     print only branches that are merged
-    > --no-merged <commit>  print only branches that are not merged
-    > --column[=<style>]    list branches in columns
-    > --sort <key>          field name to sort on
-    > --points-at <object>  print only branches of the object
-    > -i, --ignore-case     sorting and filtering are case insensitive
-    > --format <format>     format to use for the output
 
+    > -a, --all             list both remote-tracking and local branches
+    
+    > -d, --delete          delete fully merged branch
+    
+    > -D                    delete branch (even if not merged)
+    
+    > -m, --move            move/rename a branch and its reflog
+    
+    > -M                    move/rename a branch, even if target exists
+    
+    > -c, --copy            copy a branch and its reflog
+    
+    > -C                    copy a branch, even if target exists
+    
+    > -l, --list            list branch names
+    
+    > --show-current        show current branch name
+    
+    > --create-reflog       create the branch's reflog
+    
+    > --edit-description    edit the description for the branch
+    
+    > -f, --force           force creation, move/rename, deletion
+    
+    > --merged <commit>     print only branches that are merged
+    
+    > --no-merged <commit>  print only branches that are not merged
+    
+    > --column[=<style>]    list branches in columns
+    
+    > --sort <key>          field name to sort on
+    
+    > --points-at <object>  print only branches of the object
+    
+    > -i, --ignore-case     sorting and filtering are case insensitive
+    
+    > --format <format>     format to use for the output
+    
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 $ git checkout -b institucional --> Este comando criar uma nova Branch e já a coloca como sendo a Principal...
+
 Switched to a new branch 'institucional' --> Resposta de Sucesso da criação da Branch...
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (institucional)
 $ git branch --> Este Comando mostra a Branch Principal no Momento... No caso: "institucional"
+
   contato
+  
   fornecedor
+  
 * institucional
+
   master
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (institucional)
@@ -102,15 +144,21 @@ fatal: A branch named 'master' already exists.
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (institucional)
 
 $ git checkout institucional --> Usamos o "git checkout" e o nome da branch que queremos que seja a principal...
+
 --> Se colocarmos este comando acima para sair da Branch Principal ele vai dizer que já está na Branch institucional
+
 Already on 'institucional'
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (institucional)
 
 $ git branch --> Confirmamos qual é a Branch Principal, No caso: "institucional"...
+
   contato
+  
   fornecedor
+  
 * institucional
+
   master
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (institucional)
@@ -121,10 +169,15 @@ Switched to branch 'contato'
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
 $ git branch --> Verificamos se a Branch Principal foi alterada, No caso, agora é: "contato"...
+
 * contato
+
   fornecedor
+  
   institucional
+  
   master
+  
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
@@ -135,10 +188,15 @@ Your branch is up to date with 'origin/master'. --> Informa que ela é a Branch:
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
 $ git branch
+
   contato
+  
   fornecedor
+  
   institucional
+  
 * master
+
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
@@ -156,10 +214,15 @@ Switched to branch 'contato'
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
 $ git branch --> Agora estamos confirmando em qual Branch estamos... No caso: "contato"
+
 * contato
+
   fornecedor
+  
   institucional
+  
   master
+
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
@@ -170,10 +233,15 @@ Your branch is up to date with 'origin/master'.
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
 $ git branch --> Agora estamos confirmando em qual Branch estamos... No caso: "master"
+
   contato
+  
   fornecedor
+  
   institucional
+  
 * master
+
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
@@ -188,10 +256,15 @@ Switched to branch 'contato' --> Resposta de que foi (Switched) Comutado ou Alte
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
 $ git branch --> Consultamos, a alteração antes de fazer qualquer outra Ação...
+
 * contato
+
   fornecedor
+  
   institucional
+  
   master
+  
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
@@ -200,11 +273,14 @@ $ touch contato.html --> Agora, estamos criando um arquivo dentro da Branch (Ram
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
 $ git status --> Consultando o Status atual...
+
 On branch contato
 Untracked files:
-  (use "git add <file>..." to include in what will be committed) --> Dica para incluir no Rastreamento do GIT
-        contato.html --> VAI ESTAR NA COR VERMELHA...
 
+  (use "git add <file>..." to include in what will be committed) --> Dica para incluir no Rastreamento do GIT
+	
+        contato.html --> VAI ESTAR NA COR VERMELHA...
+	
 nothing added to commit but untracked files present (use "git add" to track)
 
 --> Avisando que os arquivos foram inseridos no Diretório local, mas não estão sendo rastreados...
@@ -212,10 +288,15 @@ nothing added to commit but untracked files present (use "git add" to track)
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
 $ git branch --> Consultando o status atual...
+
 * contato
+
   fornecedor
+  
   institucional
+  
   master
+  
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
@@ -226,8 +307,10 @@ WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (cont
 $ git status --> Consultando o status atual...
 On branch contato
 Changes to be committed:
+
   (use "git restore --staged <file>..." to unstage) --> Fornecendo a opção de restaurar ou deletar o que foi feito...
-        new file:   contato.html
+	
+        new file:   contato.html --> APÓS ADICIONAR VAI APARECER NA COR VERDE...
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
@@ -247,7 +330,8 @@ WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (cont
 
 $ git status --> Consultando o status atual...
 On branch contato
-nothing to commit, working tree clean --> informa que não há mais alterações a serem realizadas...
+nothing to commit, working tree clean 
+--> informa que não há mais alterações a serem realizadas...
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
