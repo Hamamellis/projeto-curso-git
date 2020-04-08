@@ -5,18 +5,22 @@ NO APRENDIZADO ATÉ AQUI EM GIT E GITHUB SOBRE BRANCH:
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
 $  git branch --> Este Comando mostra a Branch Principal no Momento...
-* master
+
+	* master
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
 $  git checkout master --> Este comando sai da Branch atual para ir a Branch master...
+
 Already on 'master'
-Your branch is up to date with 'origin/master'. --> Como só existe esta - ele diz que já é a principal
+Your branch is up to date with 'origin/master'.
+--> Como só existe esta - ele diz que já é a principal
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
 $ git branch --> Este Comando mostra a Branch Principal no Momento...
-* master
+
+	* master
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
@@ -35,88 +39,6 @@ $ git branch --> Este Comando mostra a Branch Principal no Momento...
  	fornecedor
  
 	* master
-
-*** ABAIXO, TEMOS OUTROS EXEMPLOS DE COMANDOS VÁLIDOS ***
-
-WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
-
-$ git branch -b fornecedor
-error: unknown switch `b'
-> usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
-
-  > or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
-  
-   > or: git branch [<options>] [-r] (-d | -D) <branch-name>...
-   
-   > or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
-   
-   > or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
-   
-   > or: git branch [<options>] [-r | -a] [--points-at]
-   
-   > or: git branch [<options>] [-r | -a] [--format]   
-
-> Generic options
-
-    > -v, --verbose         show hash and subject, give twice for upstream branch
-    
-    > -q, --quiet           suppress informational messages
-    
-    > -t, --track           set up tracking mode (see git-pull(1))
-    
-    > -u, --set-upstream-to <upstream> change the upstream info
-			  
-    > --unset-upstream      unset the upstream info
-    
-    > --color[=<when>]      use colored output
-    
-    > -r, --remotes         act on remote-tracking branches
-    
-    > --contains <commit>   print only branches that contain the commit
-    
-    > --no-contains <commit> print only branches that don't contain the commit
-    
-    > --abbrev[=<n>]        use <n> digits to display SHA-1s
-
-> Specific git-branch actions:
-
-    > -a, --all             list both remote-tracking and local branches
-    
-    > -d, --delete          delete fully merged branch
-    
-    > -D                    delete branch (even if not merged)
-    
-    > -m, --move            move/rename a branch and its reflog
-    
-    > -M                    move/rename a branch, even if target exists
-    
-    > -c, --copy            copy a branch and its reflog
-    
-    > -C                    copy a branch, even if target exists
-    
-    > -l, --list            list branch names
-    
-    > --show-current        show current branch name
-    
-    > --create-reflog       create the branch's reflog
-    
-    > --edit-description    edit the description for the branch
-    
-    > -f, --force           force creation, move/rename, deletion
-    
-    > --merged <commit>     print only branches that are merged
-    
-    > --no-merged <commit>  print only branches that are not merged
-    
-    > --column[=<style>]    list branches in columns
-    
-    > --sort <key>          field name to sort on
-    
-    > --points-at <object>  print only branches of the object
-    
-    > -i, --ignore-case     sorting and filtering are case insensitive
-    
---format <format>     format to use for the output
     
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 $ git checkout -b institucional --> Este comando criar uma nova Branch e já a coloca como sendo a Principal...
@@ -126,19 +48,13 @@ Switched to a new branch 'institucional' --> Resposta de Sucesso da criação da
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (institucional)
 $ git branch --> Este Comando mostra a Branch Principal no Momento... No caso: "institucional"
 
-  contato
-  
-  fornecedor
-  
-* institucional
+	  contato
 
-  master
+	  fornecedor
 
-WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (institucional)
+	* institucional
 
-$ git branch master --> Se colocarmos este comando para voltar para a Branch master ele vai dizer que já existe...
-fatal: A branch named 'master' already exists.
-  master
+	  master
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (institucional)
 
@@ -163,6 +79,7 @@ $ git branch --> Confirmamos qual é a Branch Principal, No caso: "institucional
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (institucional)
 
 $ git checkout contato --> Alteramos a Branch Principal, No caso: "institucional" para a Branch: "contato"...
+
 Switched to branch 'contato'
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
@@ -180,7 +97,10 @@ $ git branch --> Verificamos se a Branch Principal foi alterada, No caso, agora 
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
-$ git checkout master --> Se quisermos voltar para a Branch master com este comando também dá erro...
+$ git checkout master 
+--> Se quisermos voltar para a Branch master com este comando seremos 
+informado que ela é Branch Origial do Repositório...
+
 Switched to branch 'master'
 Your branch is up to date with 'origin/master'. 
 --> Informa que ela já é a Branch Original: "origin/master" e Altera a Branch...
@@ -209,7 +129,8 @@ nothing to commit, working tree clean
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
 $ git checkout contato --> Alteramos a Branch: "master" para a Branch: "contato"
-Switched to branch 'contato'
+
+Switched to branch 'contato' --> Comitado para Branch contato...
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
@@ -387,3 +308,84 @@ WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (cont
 
 $ git push origin contato --> AQUI INSERIMOS A BRANCH CONTATO CRIADA NO REPOSITÓRIO REMOTO DO GITHUB...
 
+
+*** ABAIXO, TEMOS OUTROS EXEMPLOS DE COMANDOS VÁLIDOS ***
+
+WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
+
+
+	> usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+
+  	> or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+  
+   	> or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   
+   	> or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   
+   	> or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   
+   	> or: git branch [<options>] [-r | -a] [--points-at]
+   
+   	> or: git branch [<options>] [-r | -a] [--format]   
+
+> Generic options
+
+    	> -v, --verbose         show hash and subject, give twice for upstream branch
+    
+   	 > -q, --quiet           suppress informational messages
+    
+    	> -t, --track           set up tracking mode (see git-pull(1))
+    
+    	> -u, --set-upstream-to <upstream> change the upstream info
+			  
+    	> --unset-upstream      unset the upstream info
+    
+    	> --color[=<when>]      use colored output
+    
+    	> -r, --remotes         act on remote-tracking branches
+    
+    	> --contains <commit>   print only branches that contain the commit
+    
+    	> --no-contains <commit> print only branches that don't contain the commit
+    
+    	> --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+> Specific git-branch actions:
+
+	> -a, --all             list both remote-tracking and local branches
+
+	> -d, --delete          delete fully merged branch
+
+	> -D                    delete branch (even if not merged)
+
+	> -m, --move            move/rename a branch and its reflog
+
+	> -M                    move/rename a branch, even if target exists
+
+	> -c, --copy            copy a branch and its reflog
+
+	> -C                    copy a branch, even if target exists
+
+	> -l, --list            list branch names
+
+	> --show-current        show current branch name
+
+	> --create-reflog       create the branch's reflog
+
+	> --edit-description    edit the description for the branch
+
+	> -f, --force           force creation, move/rename, deletion
+
+	> --merged <commit>     print only branches that are merged
+
+	> --no-merged <commit>  print only branches that are not merged
+
+	> --column[=<style>]    list branches in columns
+
+	> --sort <key>          field name to sort on
+
+	> --points-at <object>  print only branches of the object
+
+	> -i, --ignore-case     sorting and filtering are case insensitive
+
+	> --format <format>     format to use for the output
