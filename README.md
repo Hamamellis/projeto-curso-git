@@ -10,29 +10,29 @@ $  git branch --> Este Comando mostra a Branch Principal no Momento...
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
-$  git checkout master --> Este comando sai da Branch atual para ir a Branch master...
+	$  git checkout master 
+--> Este comando sai da Branch atual para ir a Branch master...
 
 Already on 'master'
 Your branch is up to date with 'origin/master'.
 --> Como só existe esta - ele diz que já é a principal
 
-WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
-
-$ git branch --> Este Comando mostra a Branch Principal no Momento...
-
-	* master
+Então vamos criar uma nova Branch abaixo:
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
-$ git branch contato --> Este comando está criando uma nova Branch "contato"...
+	$ git branch contato 
+--> Este comando está criando uma nova Branch "contato"...
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
-$ git branch fornecedor --> Este comando está criando uma nova Branch "fornecedor"...
+	$ git branch fornecedor 
+--> Este comando está criando uma nova Branch "fornecedor"...
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
-$ git branch --> Este Comando mostra a Branch Principal no Momento...
+	$ git branch 
+--> Este Comando mostra a Branch Principal no Momento, e as Branch´s criadas...
 
  	contato
  
@@ -41,12 +41,16 @@ $ git branch --> Este Comando mostra a Branch Principal no Momento...
 	* master
     
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
-$ git checkout -b institucional --> Este comando criar uma nova Branch e já a coloca como sendo a Principal...
+		
+	$ git checkout -b institucional 
+--> Este comando criar uma nova Branch e "JÁ" a coloca como sendo a Principal...
 
 Switched to a new branch 'institucional' --> Resposta de Sucesso da criação da Branch...
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (institucional)
-$ git branch --> Este Comando mostra a Branch Principal no Momento... No caso: "institucional"
+	
+	$ git branch 
+--> Este Comando mostra a Branch Principal no Momento... No caso: "institucional"
 
 	  contato
 
@@ -58,15 +62,18 @@ $ git branch --> Este Comando mostra a Branch Principal no Momento... No caso: "
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (institucional)
 
-$ git checkout institucional --> Usamos o "git checkout" e o nome da branch que queremos que seja a principal...
+	$ git checkout institucional 
+--> Usamos o "git checkout" e o nome da branch que queremos que seja a principal...
 
---> Se colocarmos este comando acima para sair da Branch Principal ele vai dizer que já está na Branch institucional
+--> Se colocarmos este comando acima para sair da Branch Principal, 
+ele vai dizer que já está na Branch institucional. Perceba entre os Parentes (institucional)...
 
 Already on 'institucional'
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (institucional)
 
-$ git branch --> Confirmamos qual é a Branch Principal, No caso: "institucional"...
+	$ git branch --> Sempre Consulte com este Comando!!!
+--> Confirmamos qual é a Branch Principal, No caso: "institucional"... 
 
   	contato
   
@@ -78,13 +85,15 @@ $ git branch --> Confirmamos qual é a Branch Principal, No caso: "institucional
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (institucional)
 
-$ git checkout contato --> Alteramos a Branch Principal, No caso: "institucional" para a Branch: "contato"...
+	$ git checkout contato 
+--> Alteramos a Branch Principal, No caso: "institucional" para a Branch: "contato"...
 
 Switched to branch 'contato'
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
-$ git branch --> Verificamos se a Branch Principal foi alterada, No caso, agora é: "contato"...
+	$ git branch 
+--> Verificamos se a Branch Principal foi alterada, No caso, agora é: "contato"...
 
 	* contato
 
@@ -97,13 +106,14 @@ $ git branch --> Verificamos se a Branch Principal foi alterada, No caso, agora 
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
-$ git checkout master 
+	$ git checkout master 
 --> Se quisermos voltar para a Branch master com este comando seremos 
 informado que ela é Branch Origial do Repositório...
 
 Switched to branch 'master'
 Your branch is up to date with 'origin/master'. 
---> Informa que ela já é a Branch Original: "origin/master" e Altera a Branch...
+	
+	--> Informa que ela já é a Branch Original: "origin/master" e Altera a Branch...
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
@@ -120,7 +130,7 @@ WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (mast
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
-$ git status --> A consulta de "git status" informa que não há nenhum inserção commitada...
+	$ git status --> A consulta de "git status" informa que não há nenhum inserção commitada...
 On branch master
 Your branch is up to date with 'origin/master'.
 
@@ -128,13 +138,15 @@ nothing to commit, working tree clean
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
-$ git checkout contato --> Alteramos a Branch: "master" para a Branch: "contato"
+	$ git checkout contato 
+--> Alteramos a Branch: "master" para a Branch: "contato"
 
 Switched to branch 'contato' --> Comitado para Branch contato...
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
-$ git branch --> Agora estamos confirmando em qual Branch estamos... No caso: "contato"
+	$ git branch 
+--> Agora estamos confirmando em qual Branch estamos... No caso: "contato"
 
 	* contato
 
@@ -147,14 +159,16 @@ $ git branch --> Agora estamos confirmando em qual Branch estamos... No caso: "c
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
-$ git checkout master --> Alteramos a Branch: "contato" para a Branch: "master"
+	$ git checkout master 
+--> Alteramos a Branch: "contato" para a Branch: "master"
 
 Switched to branch 'master'
 Your branch is up to date with 'origin/master'.
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
-$ git branch --> Agora estamos confirmando em qual Branch estamos... No caso: "master"
+	$ git branch 
+--> Agora estamos confirmando em qual Branch estamos... No caso: "master"
 
   	contato
   
@@ -167,16 +181,21 @@ $ git branch --> Agora estamos confirmando em qual Branch estamos... No caso: "m
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
-$ git branch contato --> Tentando criar uma Branch já existente...
+	$ git branch contato 
+--> Tentando criar uma Branch já existente...
 
 fatal: A branch named 'contato' already exists. 
---> Resposta, de que a Branch "contato" já existe...
+	
+	--> Resposta, de que a Branch "contato" já existe...
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (master)
 
-$ git checkout contato --> Voltaremos para a Branch "contatos"
+	$ git checkout contato 
+--> Voltaremos para a Branch "contatos"
 
-Switched to branch 'contato' --> Resposta de que foi (Switched) Comutado ou Alterado com Sucesso...
+Switched to branch 'contato' 
+	
+	--> Resposta de que foi (Switched) Comutado ou Alterado com Sucesso...
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
@@ -195,13 +214,15 @@ WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (cont
 
 $ touch contato.html --> Agora, estamos criando um arquivo dentro da Branch (Ramo) "contato"...
 
-ATT: 
---> Com git branch (Consultamos em qual branch estamos - Atual) - Em qual RAMO;
---> Com git status (Consultamos o Estado em que estamos - Atual) - O QUE FOI E PRECISA SER FEITO;
+	WARNING: 
+	--> Com git branch (Consultamos em qual branch estamos - Atual) - Em qual RAMO;
+		--> Com git Checkout "+" <Nome da Branch> (Alteramos a Branch) - Para outra;
+		--> Com git branch "+" <Nome da Branch> (Criamos uma nova Branch);
+	--> Com git status (Consultamos o Estado em que estamos - Atual) - O QUE FOI E PRECISA SER FEITO;
 
 WAGNER@WagnerBarros MINGW64 /e/Projetos VSCode/Curso-Git/projeto-curso-git (contato)
 
-$ git status --> Consultando o Status atual...
+$ git status --> Consultando o Status atual... (SEMPRE - SEMPRE - SEMPRE)
 
 On branch contato
 Untracked files:
